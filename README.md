@@ -1,24 +1,20 @@
-# Bitcoin Kurse Coding Challenge
+# Bitcoin Kurse Coding Challenge using Angular 8.3.23
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
+## Description
+This Web Application usess the REST API [Coindesk](https://www.coindesk.com/coindesk-api) to display the BPI currencyRates for the last 14 days.
 
-## Install Dependencies
+## Prerequisites 
+1. [Node 13.6.0](https://nodejs.org/en/)
 
-Go to https://nodejs.org/en/ and download the Current version of NodeJS. Install it using the wizard.
+## Installation 
 
-Run `npm install -g @angular/cli` to install the Angular CLI
-
-Run `npm install` to install project dependencies.
+1. Clone the repository on your machine and change directory:
+``` 
+> git clone https://github.com/adimunteanu/bitcoin-kurse-coding-challenge.git
+> cd bitcoin-kurse-coding-challenge
+```
+2. Run `npm install` to install project dependencies.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
