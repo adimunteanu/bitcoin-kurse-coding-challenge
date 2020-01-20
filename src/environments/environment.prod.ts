@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  bitcoinURL: 'https://api.coindesk.com/v1/bpi/'
 };

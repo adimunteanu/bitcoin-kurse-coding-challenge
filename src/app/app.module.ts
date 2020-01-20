@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppComponent } from './app.component';
+import { BitcoinService } from './bitcoin.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [BitcoinService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

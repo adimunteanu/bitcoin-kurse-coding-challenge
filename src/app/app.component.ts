@@ -6,16 +6,13 @@ import { Entry } from './entry';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [BitcoinService]
 })
 export class AppComponent implements OnInit {
-  title = 'bitcoin-kurse-coding-challenge';
-
   constructor(private bitcoinService: BitcoinService) {}
 
   dataEntries: Entry[] = [];
 
   ngOnInit() {
-    this.bitcoinService.mergeApiCalls().subscribe(entries => this.dataEntries = entries);
+    this.bitcoinService.mergeApiCalls('EUR').subscribe(entries => this.dataEntries = entries);
   }
 }
